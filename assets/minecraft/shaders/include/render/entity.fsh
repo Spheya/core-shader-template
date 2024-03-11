@@ -1,7 +1,6 @@
 #version 150
 
 #moj_import <fog.glsl>
-#moj_import <config.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -23,7 +22,7 @@ out vec4 fragColor;
 void main() {
     vec4 color = texture(Sampler0, texCoord0);
 #ifdef DISCARD
-    if (color.a < DISCARD_THRESHOLD) discard;
+    if (color.a < DISCARD) discard;
 #endif
     color *= vertexColor * ColorModulator;
 #ifdef OVERLAY

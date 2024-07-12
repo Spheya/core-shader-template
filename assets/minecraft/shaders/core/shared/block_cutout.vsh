@@ -1,4 +1,5 @@
 #version 150
+#define VSH
 #define DISCARD 0.1
 #define CUTOUT
 #moj_import <render/block.vsh>

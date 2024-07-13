@@ -5,4 +5,4 @@
 #define MOB
 #define ITEM
 #define XPORB
-#moj_import <render/entity.vsh>
+#moj_import <render/entity.vsh.glsl>

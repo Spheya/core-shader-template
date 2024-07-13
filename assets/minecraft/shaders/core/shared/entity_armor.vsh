@@ -2,4 +2,4 @@
 #define VSH
 #define DISCARD 0.1
 #define ARMOR
-#moj_import <render/entity.vsh>
+#moj_import <render/entity.vsh.glsl>

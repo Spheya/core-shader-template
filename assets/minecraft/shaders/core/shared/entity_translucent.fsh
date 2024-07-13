@@ -6,4 +6,4 @@
 #define PLAYER
 #define MOB
 #define ITEM
-#moj_import <render/entity.fsh>
+#moj_import <render/entity.fsh.glsl>

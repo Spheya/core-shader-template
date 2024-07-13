@@ -5,4 +5,4 @@
 #define OVERLAY
 #define ITEM
 #define BLOCK
-#moj_import <render/entity.fsh>
+#moj_import <render/entity.fsh.glsl>

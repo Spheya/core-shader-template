@@ -3,4 +3,4 @@
 #define OVERLAY
 #define SOLID
 #define PLAYER
-#moj_import <render/entity.fsh>
+#moj_import <render/entity.fsh.glsl>

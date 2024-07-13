@@ -3,7 +3,11 @@
 #define BLOCK
 #define VANILLA
 #define SOLID
-#moj_import <template/bindings.glsl>
+
+#moj_import <bindings.glsl>
 #moj_import <render/block_header.fsh.glsl>
 #moj_import <render/block.fsh.glsl>
-#moj_import <template/entry.glsl>
+
+void main() {
+    fragment();
+}

@@ -4,7 +4,7 @@
 #define VANILLA
 #define DISCARD 0.5
 #define CUTOUT_MIPPED
-#moj_import <template/template.glsl>
+#moj_import <template/bindings.glsl>
 #moj_import <render/block_header.fsh.glsl>
 #moj_import <render/block.fsh.glsl>
 #moj_import <template/entry.glsl>

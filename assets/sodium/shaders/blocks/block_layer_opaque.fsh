@@ -4,7 +4,7 @@
 #define SODIUM
 
 #import <sodium:include/chunk_matrices.glsl>
-#import <sodium:include/template.glsl>
+#import <sodium:include/bindings.glsl>
 
 #import <minecraft:include/fog.glsl>
 

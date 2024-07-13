@@ -4,6 +4,6 @@
 #define VANILLA
 #define OVERLAY
 #define SOLID
-#moj_import <template/template.glsl>
+#moj_import <template/bindings.glsl>
 #moj_import <render/entity.fsh.glsl>
 #moj_import <template/entry.glsl>

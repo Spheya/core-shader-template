@@ -3,7 +3,7 @@
 #define BLOCK
 #define VANILLA
 #define SOLID
-#moj_import <template/template.glsl>
+#moj_import <template/bindings.glsl>
 #moj_import <render/block_header.vsh.glsl>
 #moj_import <render/block.vsh.glsl>
 #moj_import <template/entry.glsl>

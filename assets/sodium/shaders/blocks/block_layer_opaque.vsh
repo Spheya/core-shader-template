@@ -5,7 +5,7 @@
 
 #import <sodium:include/chunk_matrices.glsl>
 #import <sodium:include/chunk_vertex.glsl>
-#import <sodium:include/template.glsl>
+#import <sodium:include/bindings.glsl>
 
 #import <minecraft:include/light.glsl>
 #import <minecraft:include/fog.glsl>

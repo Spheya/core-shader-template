@@ -1,5 +1,13 @@
 #version 150
 #define FSH
+#define BLOCK
+#define VANILLA
 #define DISCARD 0.5
-#define MIPPED
+#define CUTOUT_MIPPED
+
+#moj_import <bindings.glsl>
 #moj_import <render/block.fsh.glsl>
+
+void main() {
+    fragment();
+}

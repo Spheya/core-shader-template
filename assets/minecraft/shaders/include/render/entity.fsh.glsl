@@ -1,13 +1,4 @@
-#version 150
-
 #moj_import <fog.glsl>
-
-uniform sampler2D Sampler0;
-
-uniform vec4 ColorModulator;
-uniform float FogStart;
-uniform float FogEnd;
-uniform vec4 FogColor;
 
 in vec3 worldPos;
 in vec3 worldNormal;
@@ -23,11 +14,11 @@ in vec4 overlayColor;
 
 out vec4 fragColor;
 
-void main() {
-    vec4 color = texture(Sampler0, texCoord0);
+void fragment() {
+    vec4 color = texture(MainTex_Sampler, texCoord0);
 
 #ifdef DISCARD
-    if (color.a < DISCARD) discard;
+    if (color.a < AlphaCutoff) discard;
 #endif
 
     color *= vertexColor * diffuseLightColor * ColorModulator;

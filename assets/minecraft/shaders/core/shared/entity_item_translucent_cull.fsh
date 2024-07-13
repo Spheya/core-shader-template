@@ -1,8 +1,9 @@
 #version 150
 #define FSH
+#define ENTITY
+#define VANILLA
 #define DISCARD 0.1
 #define ITEM_TRANSLUCENT_CULL
-#define MOB
-#define ITEM
-#define XPORB
-#moj_import <render/entity.fsh>
+#moj_import <template/template.glsl>
+#moj_import <render/entity.fsh.glsl>
+#moj_import <template/entry.glsl>

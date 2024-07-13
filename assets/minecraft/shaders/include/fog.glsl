@@ -1,11 +1,17 @@
-#version 150
+#ifndef SODIUM
+    #define USE_FOG
+#endif
 
 vec4 linear_fog(vec4 inColor, float vertexDistance, float fogStart, float fogEnd, vec4 fogColor) {
+#ifdef USE_FOG
     if (vertexDistance <= fogStart) {
         return inColor;
     }
     float fogValue = vertexDistance < fogEnd ? smoothstep(fogStart, fogEnd, vertexDistance) : 1.0;
     return vec4(mix(inColor.rgb, fogColor.rgb, fogValue * fogColor.a), inColor.a);
+#else
+    return inColor;
+#endif
 }
 
 float linear_fog_fade(float vertexDistance, float fogStart, float fogEnd) {
@@ -18,11 +24,7 @@ float linear_fog_fade(float vertexDistance, float fogStart, float fogEnd) {
 }
 
 float fog_distance(vec3 pos, int shape) {
-    if (shape == 0) {
+    if (shape == 0)
         return length(pos);
-    } else {
-        float distXZ = length(pos.xz);
-        float distY = abs(pos.y);
-        return max(distXZ, distY);
-    }
+    return max(length(pos.xz), abs(pos.y));
 }

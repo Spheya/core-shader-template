@@ -1,8 +1,10 @@
 #version 150
 #define FSH
+#define ENTITY
+#define VANILLA
 #define DISCARD 0.1
-#define CUTOUT
 #define OVERLAY
-#define ITEM
-#define BLOCK
-#moj_import <render/entity.fsh>
+#define CUTOUT
+#moj_import <template/template.glsl>
+#moj_import <render/entity.fsh.glsl>
+#moj_import <template/entry.glsl>

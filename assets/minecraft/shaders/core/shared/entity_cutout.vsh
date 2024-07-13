@@ -1,8 +1,10 @@
 #version 150
 #define VSH
+#define ENTITY
+#define VANILLA
 #define DISCARD 0.1
-#define CUTOUT
 #define OVERLAY
-#define ITEM
-#define BLOCK
-#moj_import <render/entity.vsh>
+#define CUTOUT
+#moj_import <template/template.glsl>
+#moj_import <render/entity.vsh.glsl>
+#moj_import <template/entry.glsl>

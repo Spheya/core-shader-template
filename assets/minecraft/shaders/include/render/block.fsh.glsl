@@ -14,8 +14,7 @@ void fragment() {
     if (color.a < AlphaCutoff) discard;
 #endif
 
-    color.rgb *= vertexColor.rgb;
-    color *= vertexColor.a;
+    color.rgb *= vertexColor.rgb * vertexColor.a;
     color *= lightMapColor * ColorModulator;
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }
